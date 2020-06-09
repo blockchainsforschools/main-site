@@ -1,29 +1,40 @@
 {
-  "name": "bfs-site",
-  "version": "1.0.0",
-  "description": "Website for BFS",
-  "main": "index.js",
-  "scripts": {
-    "start": "npx nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/raunakchowdhury/bfs-site.git"
-  },
-  "author": "BFS Webdev Team",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/raunakchowdhury/bfs-site/issues"
-  },
-  "homepage": "https://github.com/raunakchowdhury/bfs-site#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "node": "^12.6.0",
-    "nodemon": "^1.19.1",
-    "nunjucks": "^3.2.0"
-  },
-  "devDependencies": {
-    "chokidar": "latest"
-  }
+	"name": "bfs-site",
+	"version": "1.0.0",
+	"description": "Website for BFS",
+	"main": "index.js",
+	"scripts": {
+		"start": "npx nodemon index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/raunakchowdhury/bfs-site.git"
+	},
+	"author": "BFS Webdev Team",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/raunakchowdhury/bfs-site/issues"
+	},
+	"homepage": "https://github.com/raunakchowdhury/bfs-site#readme",
+	"dependencies": {
+		"eslint": "^7.2.0",
+		"express": "^4.17.1",
+		"node": "^12.6.0",
+		"nodemon": "^1.19.1",
+		"nunjucks": "^3.2.0",
+		"prettier": "^2.0.5"
+	},
+	"devDependencies": {
+		"chokidar": "latest"
+	},
+	"prettier": {
+		"useTabs": true,
+		"tabWidth": 4,
+		"semi": true,
+		"arrowParens": "always",
+		"trailingComma": "none",
+		"singleQuote": true,
+		"printWidth": 80
+	}
 }

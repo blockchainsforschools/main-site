@@ -2,11 +2,10 @@ const express = require('express');
 const nunjucks = require('nunjucks');
 const app = express();
 const port = process.env.PORT || 3000;
-const cluster = require("cluster");
+const cluster = require('cluster');
 
-if(Number(process.env.NUM_CLUSTER) && cluster.isMaster){
-	for(let x = 0; x < Number(process.env.NUM_CLUSTER) ; x++)
-		cluster.fork();
+if (Number(process.env.NUM_CLUSTER) && cluster.isMaster) {
+	for (let x = 0; x < Number(process.env.NUM_CLUSTER); x++) cluster.fork();
 }
 
 // app.set("view engine", "nunjucks");
@@ -26,10 +25,10 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/team', (req, res) => {
-    // res.send(
-    //	'Will show all team members. Execs first, followed by members. Potential React use here'
-    // );
-    res.render('team.html');
+	// res.send(
+	//	'Will show all team members. Execs first, followed by members. Potential React use here'
+	// );
+	res.render('team.html');
 });
 
 app.get('/announcements', (req, res) => {
@@ -49,11 +48,11 @@ app.get('/hackathon', (req, res) => {
 
 app.get('/apply/:position', (req, res) => {
 	let position = req.params.position;
-	if (position == 'intern') {
+	if (position === 'intern') {
 		res.render('summer-intern.html');
-	} else if (position == 'mentoring') {
+	} else if (position === 'mentoring') {
 		res.render('mentoring-apply.html');
-	} else if (position == 'staff') {
+	} else if (position === 'staff') {
 		res.render('staff.html');
 	} else {
 		res.send(`Page for ${req.params.position} does not exist!`);
@@ -66,7 +65,7 @@ app.get('/mentorship', (req, res) => {
 
 app.get('/mentorship/:position', (req, res) => {
 	let position = req.params.position;
-	if (position == 'apply') {
+	if (position === 'apply') {
 		res.render('mentoring-apply.html');
 	} else {
 		res.send(`Page for ${req.params.position} does not exist!`);
