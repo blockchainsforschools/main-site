@@ -137,7 +137,7 @@ function Warning(props) {
 				'Hi all,',
 				React.createElement('br', null),
 				React.createElement('br', null),
-				'Due to complications caused by the surge of cases of COVID-19 in NYC, BlockchainsForHacks, originally set for May 30th to May 31st, will be postponed. The exact rescheduled date has yet to be confirmed, as it is still uncertain when conditions will be safe enough for our hackathon to proceed. However, BlockchainsForHacks will likely take place in late 2020. We made this decision to ensure the safety of all our hackathon attendees and organizers, and we hope you will understand our decision. Reimbursements, prizes, mentoring, and resume dropping will continue to be there for all attendees, so we hope to see you in late 2020. Stay safe!',
+				'Due to complications caused by the surge of cases of COVID-19 in NYC, HackBFS, originally set for May 30th to May 31st, will be postponed. The exact rescheduled date has yet to be confirmed, as it is still uncertain when conditions will be safe enough for our hackathon to proceed. However, HackBFS will likely take place in late 2020. We made this decision to ensure the safety of all our hackathon attendees and organizers, and we hope you will understand our decision. Reimbursements, prizes, mentoring, and resume dropping will continue to be there for all attendees, so we hope to see you in late 2020. Stay safe!',
 				React.createElement('br', null),
 				React.createElement('br', null),
 				'Updated as of April 8th, 2020'
@@ -373,7 +373,7 @@ function About() {
 		React.createElement(
 			'p',
 			null,
-			'Blockchains4Hacks is one of the first introductory blockchain-focused hackathons open to high school and college students. For 24 hours, students will learn about ways to integrate blockchain into their applications, hacking away at challenges, and building applications that integrate those services. We plan to host workshops leading up to the hackathon, allowing participants to immerse themselves in blockchain before building their projects.'
+			'HackBFS is one of the first introductory blockchain-focused hackathons open to high school and college students. For 24 hours, students will learn about ways to integrate blockchain into their applications, hacking away at challenges, and building applications that integrate those services. We plan to host workshops leading up to the hackathon, allowing participants to immerse themselves in blockchain before building their projects.'
 		),
 		React.createElement(
 			'p',
