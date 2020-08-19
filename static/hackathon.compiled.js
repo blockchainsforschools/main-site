@@ -305,20 +305,15 @@ function Sponsors() {
     src: '/supporters/kadena.png',
     url: 'https://www.kadena.io/',
     width: '9rem'
-  })), /*#__PURE__*/React.createElement(Grid, null, /*#__PURE__*/React.createElement(SponsorCell, {
+  })), /*#__PURE__*/React.createElement(Grid, null, /*#__PURE__*/React.createElement(GridCell, {
+    span: 4,
+    className: ['desktop-only']
+  }), /*#__PURE__*/React.createElement(SponsorCell, {
     alt: 'Hack Club Bank Logo',
     src: '/hack-club-branding.png',
     url: 'https://hackclub.com/bank/',
     width: '11rem',
-    span: 6,
-    spanTablet: 8
-  }), /*#__PURE__*/React.createElement(SponsorCell, {
-    alt: 'Hack Club Bank Logo',
-    src: '/mit-sandbox.png',
-    url: 'http://sandbox.mit.edu/',
-    width: '11rem',
-    span: 6,
-    spanTablet: 8
+    span: 4
   })), /*#__PURE__*/React.createElement(Title, {
     center: true
   }, "Community Partners"), /*#__PURE__*/React.createElement(Grid, null, /*#__PURE__*/React.createElement(GridCell, {

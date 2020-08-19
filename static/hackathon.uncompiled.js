@@ -397,21 +397,14 @@ function Sponsors() {
 			</Grid>
 
 			<Grid>
+				<GridCell span={4} className={['desktop-only']} />
+
 				<SponsorCell
 					alt={'Hack Club Bank Logo'}
 					src={'/hack-club-branding.png'}
 					url={'https://hackclub.com/bank/'}
 					width={'11rem'}
-					span={6}
-					spanTablet={8}
-				/>
-				<SponsorCell
-					alt={'Hack Club Bank Logo'}
-					src={'/mit-sandbox.png'}
-					url={'http://sandbox.mit.edu/'}
-					width={'11rem'}
-					span={6}
-					spanTablet={8}
+					span={4}
 				/>
 			</Grid>
 
