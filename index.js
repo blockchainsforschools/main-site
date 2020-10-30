@@ -4,10 +4,6 @@ const app = express();
 const port = process.env.PORT || 3000;
 const cluster = require('cluster');
 
-if (Number(process.env.NUM_CLUSTER) && cluster.isMaster) {
-	for (let x = 0; x < Number(process.env.NUM_CLUSTER); x++) cluster.fork();
-}
-
 // app.set("view engine", "nunjucks");
 app.use(express.static(__dirname + '/static'));
 
@@ -89,8 +85,14 @@ app.get('/chapters', (req, res) => {
 	res.render('chapters.html');
 });
 
-app.listen(port, () => console.log(`App running on localhost:${port}`));
-
 app.use((req, res, next) => {
 	res.status(404).render('404.html');
 });
+
+if (Number(process.env.NUM_CLUSTER) && cluster.isMaster) {
+	for (let x = 0; x < Number(process.env.NUM_CLUSTER); x++) {
+		cluster.fork();
+	}
+} else {
+	app.listen(port, () => console.log(`App running on localhost:${port}`));
+}
