@@ -9,5 +9,8 @@
     <orderEntry type="library" name="react-dom.production" level="application" />
     <orderEntry type="library" name="react.production" level="application" />
     <orderEntry type="library" name="babel" level="application" />
+    <orderEntry type="library" name="react" level="application" />
+    <orderEntry type="library" name="react-dom" level="application" />
+    <orderEntry type="library" name="babel-standalone" level="application" />
   </component>
 </module>
